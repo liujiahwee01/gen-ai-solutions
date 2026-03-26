@@ -1,26 +1,3 @@
-# import subprocess
-
-# import ffmpeg
-# import os
-
-# # extract audio from video
-# def extract_audio(video_path):
-#     audio_path = video_path.replace(".mp4", ".wav")
-
-#     # command = [
-#     #     "ffmpeg",
-#     #     "-i", video_path,
-#     #     "-vn",
-#     #     "-acodec", "pcm_s16le",
-#     #     "-ar", "16000", # 16kHz
-#     #     "-ac", "1", # mono
-#     #     audio_path
-#     # ]
-#     # subprocess.run(command, check=True)
-#     ffmpeg.input(video_path).output(audio_path, format='wav').run(overwrite_output=True)
-    
-#     return audio_path
-
 from app.core.config import AUDIO_OUTPUT
 import cv2
 from moviepy.editor import VideoFileClip

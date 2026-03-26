@@ -38,19 +38,13 @@ storage:
 -node.js >20.19.0
 -ffmpeg
 
-# ltr check
-Create .env:
-
-LLM_MODEL_NAME=Qwen/Qwen2-7B-Instruct
-WHISPER_MODEL_SIZE=base
-WHISPER_COMPUTE_TYPE=int8
-YOLO_MODEL=yolov8n.pt
-
-Install:
-
+# dependencies
+pip install fastapi uvicorn
+pip install torch torchvision torchaudio
+pip install transformers accelerate
+pip install faster-whisper
+pip install opencv-python
+pip install moviepy
+pip install ultralytics
+pip install easyocr
 pip install python-dotenv
-
-Update config.py:
-
-from dotenv import load_dotenv
-load_dotenv()

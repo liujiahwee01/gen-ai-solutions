@@ -3,9 +3,9 @@ function Home() {
     <div>
       <h1>Home</h1>
 
-      <Link to="/upload">
+      {/* <Link to="/upload">
         <button>Upload video</button>
-      </Link>
+      </Link> */}
     </div>
   );
 }
